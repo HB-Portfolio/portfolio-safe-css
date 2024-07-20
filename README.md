@@ -1,4 +1,4 @@
-# SafeCSS Website Development
+# SafeCSS Website
 
 [Visit SafeCSS](https://www.safecss.com)
 
