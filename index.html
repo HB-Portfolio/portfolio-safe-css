@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeCSS</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Poiret+One&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/client.js" defer></script>
+  </head>
+  <body class="bg-white dark:bg-gray-700">
+    <nav
+      id="nav"
+      class="flex justify-between items-center p-4 bg-white dark:bg-gray-700"
+    >
+      <a href="./index.html">
+        <h1
+          class="text-black text-2xl font-poiret dark:text-sky-400 md:hover:scale-110 md:hover:text-sky-400 transition duration-150 ease-in-out"
+        >
+          Safe<span>CSS</span>
+        </h1>
+      </a>
+      <div class="inline-flex">
+        <div
+          id="openNav"
+          class="flex flex-col justify-center cursor-pointer md:hover:scale-125 transition duration-150 ease-in-out"
+        >
+          <svg
+            class="group"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24.853"
+            height="20"
+            viewBox="0 0 18.853 12"
+          >
+            <g
+              id="Icon_feather-menu"
+              data-name="Icon feather-menu"
+              transform="translate(-4.5 -8)"
+            >
+              <path
+                class="md:group-hover:stroke-sky-400 transition duration-150 ease-in-out"
+                id="Path_3"
+                data-name="Path 3"
+                d="M4.5,18H23.353"
+                transform="translate(0 -4)"
+                fill="none"
+                stroke="#000"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+              <path
+                class="md:group-hover:stroke-sky-400 transition duration-150 ease-in-out"
+                id="Path_4"
+                data-name="Path 4"
+                d="M4.5,9H23.353"
+                transform="translate(0)"
+                fill="none"
+                stroke="#000"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+              <path
+                class="md:group-hover:stroke-sky-400 transition duration-150 ease-in-out"
+                id="Path_5"
+                data-name="Path 5"
+                d="M4.5,27H23.353"
+                transform="translate(0 -8)"
+                fill="none"
+                stroke="#000"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </g>
+          </svg>
+        </div>
+        <div
+          id="sideBar"
+          class="fixed top-0 right-0 bg-transparent w-0 h-full overflow-x-hidden duration-500 z-10"
+        >
+          <div
+            id="sideNav"
+            class="fixed top-0 right-0 bg-white text-black w-0 h-full flex justify-center items-center overflow-x-hidden duration-500 font-bold z-50 dark:bg-gray-700"
+          >
+            <a
+              id="exitNav"
+              href="javascript:void(0)"
+              class="text-4xl absolute top-0 right-0 mr-18 mt-3 md:hover:scale-125 transition duration-150 ease-in-out md:hover:text-sky-400"
+              >&times;</a
+            >
+            <ul class="text-2xl font-titilium">
+              <li class="text-md text-sky-400">Welcome To</li>
+              <li class="mb-20 font-poiret text-4xl dark:text-white">
+                SafeCSS
+              </li>
+              <li
+                class="p-2 md:hover:scale-110 transition duration-150 ease-in md:hover:text-sky-400"
+              >
+                <a href="#intro">Intro</a>
+              </li>
+              <li
+                class="p-2 md:hover:scale-110 transition duration-150 ease-in md:hover:text-sky-400"
+              >
+                <a href="#features">Features</a>
+              </li>
+              <li
+                class="p-2 md:hover:scale-110 transition duration-150 ease-in md:hover:text-sky-400"
+              >
+                <a href="#security">Security</a>
+              </li>
+              <li
+                class="p-2 md:hover:scale-110 transition duration-150 ease-in md:hover:text-sky-400"
+              >
+                <a href="#development">Development</a>
+              </li>
+              <li
+                class="p-2 md:hover:scale-110 transition duration-150 ease-in md:hover:text-sky-400"
+              >
+                <a href="#coming-soon">Coming Soon</a>
+              </li>
+              <li>
+                <a href="https://github.com/safecss">
+                  <img
+                    src="./assets/images/github.svg"
+                    alt="GitHub Link"
+                    class="w-10 h-10 mt-20 mb-4 pb-0.5 md:hover:scale-125 transition duration-150 ease-in md:hover:border-b-2 border-sky-400"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/company/safecss/">
+                  <img
+                    src="./assets/images/linkedin.svg"
+                    alt="LinkedIn Link"
+                    class="w-10 h-10 pb-1.5 md:hover:scale-125 transition duration-150 ease-in md:hover:border-b-2 border-sky-400"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center items-center pl-4">
+          <input type="checkbox" class="hidden checkbox" id="checkbox" />
+          <label for="checkbox" class="checkbox-toggle"
+            ><span class="ball"></span
+          ></label>
+        </div>
+      </div>
+    </nav>
+    <header
+      id="intro"
+      class="flex flex-col text-center bg-[url('../assets/images/header.png')] relative h-80 bg-center bg-cover bg-no-repeat bg-blend-overlay bg-gray-700 justify-center"
+    >
+      <section class="text-white">
+        <h1 class="text-7xl font-poiret mb-2 text-center">SafeCSS</h1>
+        <h2
+          class="text-base font-titilium bg-sky-400 text-white dark:text-black text-center"
+        >
+          Building a Secure Foundation for Web Development
+        </h2>
+      </section>
+    </header>
+    <main>
+      <section
+        class="flex flex-col items-center justify-center p-8 pt-16 pb-16 text-center w-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white dark:text-black"
+        style="flex: 2"
+      >
+        <div style="max-width: 750px">
+          <h1 class="text-2xl mb-4 font-play">What is SafeCSS?</h1>
+          <p class="font-titilium text-lg leading-loose">
+            SafeCSS is a CSS framework that puts application security at the
+            forefront of web development. Born from Tailwind CSS, SafeCSS is
+            meticulously crafted to provide developers with a secure, reliable,
+            and feature-rich toolkit for building modern websites and
+            applications. While SafeCSS is currently in development and not yet
+            available for public use, we are working tirelessly to bring you a
+            product that is not only secure but also easy to use and highly
+            customizable.
+          </p>
+        </div>
+      </section>
+      <section
+        id="features"
+        class="mx-auto flex justify-center dark:bg-black pt-10 pb-10"
+      >
+        <div class="max-w-lg p-8 lg:max-w-6xl">
+          <div
+            id="card-container"
+            class="grid grid-cols-1 lg:grid-cols-3 gap-8"
+          ></div>
+        </div>
+      </section>
+      <section
+        id="security"
+        class="flex flex-col items-center justify-center p-8 pt-16 pb-16 text-center w-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white dark:text-black"
+        style="flex: 2"
+      >
+        <div style="max-width: 750px">
+          <h1 class="text-2xl mb-4 font-play">
+            Prioritizing Application Security
+          </h1>
+          <p class="font-titilium text-lg leading-loose">
+            At SafeCSS, security is not just a feature—it's a core principle.
+            Our team is dedicated to ensuring that every line of code written
+            for SafeCSS is rigorously reviewed and tested for vulnerabilities.
+            We prioritize security updates and follow best practices to mitigate
+            potential risks, giving you peace of mind knowing that your projects
+            are built on a secure foundation.
+          </p>
+        </div>
+      </section>
+      <canvas id="matrix-rain"></canvas>
+      <section
+        id="development"
+        class="flex flex-col items-center justify-center p-8 pt-16 pb-16 text-center w-full bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white dark:text-black"
+        style="flex: 2"
+      >
+        <div style="max-width: 750px">
+          <h1 class="text-2xl mb-4 font-play">Development Process</h1>
+          <p class="font-titilium text-lg leading-loose">
+            The SafeCSS team follows a secure development process to ensure that
+            every aspect of the framework is designed with security in mind.
+            From initial concept to final release, we prioritize security at
+            every step, so you can focus on building amazing websites and
+            applications without compromising on security.
+          </p>
+        </div>
+      </section>
+      <section
+        id="coming-soon"
+        class="flex flex-col items-center justify-center p-8 pt-16 pb-16 text-center w-full bg-white text-black dark:bg-black dark:text-sky-400"
+        style="flex: 2"
+      >
+        <div style="max-width: 750px">
+          <h1 class="text-2xl mb-4 font-play">Coming Soon</h1>
+          <p class="font-titilium text-lg leading-loose">
+            SafeCSS is currently in development and will be available for public
+            use in the future. Sign up for our newsletter to be notified when
+            SafeCSS is ready for launch.
+          </p>
+          <form
+            action="https://formspree.io/f/xgegyvnd"
+            method="POST"
+            class="flex flex-col justify-center items-center gap-3 mt-10 font-titilium md:flex-row"
+          >
+            <label class="flex">
+              <input
+                type="email"
+                name="email"
+                class="px-10 py-1.5 text-black text-base focus:outline-none border-gray-300 border-2 focus:border-sky-400 dark:border-gray-700 dark:bg-gray-700"
+                placeholder="Enter Your Email Here"
+                required
+              />
+            </label>
+            <button
+              type="submit"
+              class="bg-sky-400 text-white dark:text-black text-base px-4 py-1.5 transition duration-150 ease-in dark:md:hover:bg-gray-700 dark:md:hover:border-gray-700 border-2 dark:md:hover:text-sky-400 border-sky-400 justify-center font-sans md:hover:bg-emerald-500 md:hover:border-emerald-500 md:hover:scale-110"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-sky-400 p-4 text-white text-base font-sans flex flex-row justify-center text-center dark:bg-gray-700 dark:text-sky-400"
+    >
+      <h2 class="hidden md:block">
+        Copyright &copy; 2024. <a href="#nav">SafeCSS</a> - All Rights Reserved.
+      </h2>
+      <h2 class="block md:hidden">
+        Copyright &copy; 2024. <a href="#nav">SafeCSS</a> <br />
+        All Rights Reserved.
+      </h2>
+    </footer>
+  </body>
+</html>
