@@ -2,6 +2,8 @@
 
 [Visit SafeCSS](https://www.safecss.com)
 
+**Author:** Hendrich Buhrer 
+
 ## Overview
 
 This repository contains the full codebase for the SafeCSS website. The goal of this project is to demonstrate my skills in web development, focusing on code quality, structure, and adherence to best practices.
