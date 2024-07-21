@@ -39,10 +39,4 @@ The key files in this repository include:
 - **tailwind.config.js**: Configuration file for customizing Tailwind CSS.
 - **input.css**: Source CSS file using Tailwind CSS directives.
 
-## Conclusion
-
 The SafeCSS website is a showcase of my web development capabilities, focusing on delivering high-quality, secure, and performant code. Feel free to review the code, provide feedback, and to contact me to discuss what it takes to develop a secure and efficient CSS framework.
-
----
-
-Thank you for visiting the SafeCSS website repository. Your feedback and contributions are always welcome!
